@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>play song</title>
+    <link rel="stylesheet" href="music.css">
+    <script src="https://kit.fontawesome.com/6ab4057054.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="player">
+        <nav>
+           <div class="circle">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="circle">
+               <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            
+            </nav>
+
+        <img src="img.png" class="img">
+        <h1>YAD(Яд) </h1>
+        <p>𝒄𝒐𝒗𝒆𝒓 𝒃𝒚 𝑽𝒂𝒏𝒏𝒂 𝑹𝒂𝒊𝒏𝒆𝒍𝒍𝒆</p>
+        <audio id="song" >
+            <source src="song.mp3" type="audio/mpeg">
+       </audio>
+      <input type="range" value="0" id="play">
+ 
+     <div class="controls">
+             <div><i class="fa-solid fa-backward-step"></i></div>
+            <div onclick="playpause()"><i class="fa-solid fa-circle-play" id="control"></i></div>
+            <div><i class="fa-solid fa-forward-step"></i></div>
+      </div>
+
+  </div>
+</div>
+<script src="music.js"></script>
+</body>
+</html>
